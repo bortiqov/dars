@@ -1,4 +1,5 @@
 <?php
+echo "as";
 $k = 0;
 $myFile = "files.txt";
 if (isset($_POST['submit']) && !empty($_POST['text'])) {
