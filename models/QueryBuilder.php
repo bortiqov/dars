@@ -7,14 +7,14 @@ class QueryBuilder
 
     private $db;
 
-    protected function getAll($table)
+    public function getAll($table)
     {
         $sql = "SELECT * FROM {$table}";
         $stmt = $this->db->query($sql)->fetchAll(PDO::FETCH_ASSOC);
         return $stmt;
     }
 
-    protected function getOne($table, $id)
+    public function getOne($table, $id)
     {
         $sql = "SELECT * FROM {$table} WHERE id = ?";
         $stmt = $this->db->prepare($sql);
@@ -23,7 +23,7 @@ class QueryBuilder
         return $result;
     }
 
-    protected function create($table, $data)
+    public function create($table, $data)
     {
         // Arraydan oxirgi bo'sh qiymatli keyni olib tashlaymiz va faqat qiymati bor keylarni olamiz (bu button nomini olib tashlash uchun kerak).
         $keys = array_diff($data, array(''));
@@ -36,7 +36,7 @@ class QueryBuilder
         for ($i = 0; $i < count($keysForArray); $i++) {
             $valueKeys[] = ':' . $keysForArray[$i];
         }
-        // Arraydan string o'tkazamiz.
+        // Arraydan stringga o'tkazamiz.
         $values = implode(', ', $valueKeys);
 
         $sql = "INSERT INTO {$table} ({$columns}) VALUES ({$values})";
@@ -51,4 +51,21 @@ class QueryBuilder
             $this->goBack();
         }
     }
+
+    public function delete($table, $id)
+    {
+        $sql = "DELETE FROM {$table} WHERE id = ?";
+        $stmt = $this->db->prepare($sql);
+        $params = [$id];
+        try {
+            $stmt->execute($params);
+            $this->alertMessage("successfully", "Ma'lumotlar muvaffaqqiyatli o'chirildi!", "bg-success", "text-light", 10000);
+            $this->goBack();
+        }
+        catch (Exception $e) {
+            $this->alertMessage("failed", "Xatolik yuz berdi! <br>".$e->getMessage(), "bg-danger", "text-light", 10000);
+            $this->goBack();
+        }
+    }
+
 }
