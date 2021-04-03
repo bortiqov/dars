@@ -12,6 +12,8 @@ function engKattasi($value1, $value2, $value3){
   if($value4 > $value2){
       if($value4 > $value3){
           echo "$value4 barcha sonlardan katta";
+      }else{
+          echo "$value3 barcha sonlardan katta";
       }
   }else{
       $value4 = $value2;
@@ -21,7 +23,6 @@ function engKattasi($value1, $value2, $value3){
           echo "$value3 barcha sonlardan katta";
       }
   } 
-}
 
 echo "my name is Jamshid";
 include_once "employees.php";
