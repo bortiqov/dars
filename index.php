@@ -1,4 +1,7 @@
 <?php
+// name = Bunyodjon
+include_once "fuction.php";
+
 echo "my name is Jamshid";
 include_once "employees.php";
 
@@ -42,3 +45,20 @@ function compare($a,$b,$c){
     }
 }
 echo compare(10,9,11);
+
+
+$mas=$_POST['number'];
+$katta=max($mas);
+print_r($katta);
+ ?>
+
+
+ <html>
+ <form action="cherka.php" method="POST">
+  <input type="number" name="number[0]" placeholder="sonni kiriting"><br>
+  <input type="number" name="number[1]" placeholder="sonni kiriting"><br>
+  <input type="number" name="number[2]" placeholder="sonni kiriting"><br>
+  <input type="submit">
+  </form>
+ </html>
+
