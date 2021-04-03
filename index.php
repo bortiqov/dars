@@ -81,6 +81,7 @@ function max_3_number($a,$b,$c){
 
 <?php
 
+// Xolmurod
 function engKattaSon($array)
 {
   return max($array);
@@ -95,7 +96,6 @@ $arrayNum = [$num1, $num2, $num3];
 echo engKattaSon($arrayNum);
 
 
-=======
 /*  <-----   Bahodir   --------> */
 function compare($a, $b, $c)
 {
