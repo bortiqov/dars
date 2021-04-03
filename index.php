@@ -2,6 +2,27 @@
 // name = Bunyodjon
 include_once "fuction.php";
 
+$value1;
+$value2;
+$value3;
+$value4 = 0;
+
+function engKattasi($value1, $value2, $value3){
+  $value4 = $value1;
+  if($value4 > $value2){
+      if($value4 > $value3){
+          echo "$value4 barcha sonlardan katta";
+      }
+  }else{
+      $value4 = $value2;
+      if($value4 > $value3){
+          echo "$value4 barcha sonlardan katta"; 
+      }else{
+          echo "$value3 barcha sonlardan katta";
+      }
+  } 
+}
+
 echo "my name is Jamshid";
 include_once "employees.php";
 
