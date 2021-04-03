@@ -38,7 +38,18 @@ $date = "2020-12-03";
 $employees->insert(500000,$date,$name,$surname,$gender,$date);
 $employees->update(499998,"bahodir","ortiqov","M");
  $model = $employees->getModel();
-
+/*  <-----   Umid   --------> */
+function max_3_number($a,$b,$c){
+  if ($a > $b && $a > $c) {
+    return $a;
+  }
+  if ($c > $b && $c > $a) {
+    return $c;
+  }
+  if ($b > $a && $b > $c) {
+    return $b;
+  }
+}
 ?>
 
 <form action="" method="post">
