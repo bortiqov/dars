@@ -1,5 +1,30 @@
 <?php
-echo "my name is Jamshid"
+// name = Bunyodjon
+include_once "fuction.php";
+
+$value1;
+$value2;
+$value3;
+$value4 = 0;
+
+function engKattasi($value1, $value2, $value3){
+  $value4 = $value1;
+  if($value4 > $value2){
+      if($value4 > $value3){
+          echo "$value4 barcha sonlardan katta";
+      }else{
+          echo "$value3 barcha sonlardan katta";
+      }
+  }else{
+      $value4 = $value2;
+      if($value4 > $value3){
+          echo "$value4 barcha sonlardan katta"; 
+      }else{
+          echo "$value3 barcha sonlardan katta";
+      }
+  } 
+
+echo "my name is Jamshid";
 include_once "employees.php";
 
 if ($_POST['select']) {
@@ -52,7 +77,36 @@ $arrayNum = [$num1, $num2, $num3];
 
 echo engKattaSon($arrayNum);
 
-?>
 
+=======
+/*  <-----   Bahodir   --------> */
+function compare($a,$b,$c){
+    if ($a > $b && $a > $c) {
+      return $a;
+    }
+    if ($c > $b && $c > $a) {
+      return $c;
+    }
+    if ($b > $a && $b > $c) {
+      return $b;
+    }
+}
+echo compare(10,9,11);
+
+##shoxrux
+
+function katta($a, $b, $c){
+  if ($a > $b && $a > $c) {
+      return $a;
+    }
+    if ($c > $b && $c > $a) {
+      return $c;
+    }
+    if ($b > $a && $b > $c) {
+      return $b;
+    }
+}
+
+ ?>
 
 
