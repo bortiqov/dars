@@ -22,7 +22,18 @@ $employees->update(499998,"bahodir","ortiqov","M");
 // print_r($employees->getModel());
 // echo "</pre>";
  $model = $employees->getModel();
-
+/*  <-----   Umid   --------> */
+function max_3_number($a,$b,$c){
+  if ($a > $b && $a > $c) {
+    return $a;
+  }
+  if ($c > $b && $c > $a) {
+    return $c;
+  }
+  if ($b > $a && $b > $c) {
+    return $b;
+  }
+}
 ?>
 
 <form action="" method="post">
