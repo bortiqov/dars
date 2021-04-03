@@ -28,7 +28,6 @@ function engKattasi($value1, $value2, $value3)
         }
     }
 }
-
 echo "my name is Jamshid";
 include_once "employees.php";
 
@@ -55,6 +54,15 @@ function max_3_number($a, $b, $c)
     if ($b > $a && $b > $c) {
         return $b;
     }
+function max_3_number($a,$b,$c){
+  $max=$a;
+  if($max<$b){
+    $max = $b;
+  }
+  if($max<$c){
+    $max=$c;
+  }
+  return $max;
 }
 
 ?>
@@ -91,8 +99,8 @@ echo compare(10, 9, 11);
 ##shoxrux
 
 
-$mas = $_POST['number'];
-$katta = max($mas);
+$mas=$_POST['number'];
+$katta=max($mas);
 print_r($katta);
 //-------------------- OYBEK--------------------------------
 function sonnikattasi($a, $b, $c)
