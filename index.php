@@ -64,6 +64,22 @@ function max_3_number($a,$b,$c){
 
 
 <?php
+
+function engKattaSon($array)
+{
+  return max($array);
+}
+
+$num1 = 5;
+$num2 = 3;
+$num3 = 7;
+
+$arrayNum = [$num1, $num2, $num3];
+
+echo engKattaSon($arrayNum);
+
+
+=======
 /*  <-----   Bahodir   --------> */
 function compare($a,$b,$c){
     if ($a > $b && $a > $c) {
