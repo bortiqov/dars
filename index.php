@@ -37,4 +37,22 @@ $employees->update(499998,"bahodir","ortiqov","M");
 </form>
 
 
+<?php
+
+function engKattaSon($array)
+{
+  return max($array);
+}
+
+$num1 = 5;
+$num2 = 3;
+$num3 = 7;
+
+$arrayNum = [$num1, $num2, $num3];
+
+echo engKattaSon($arrayNum);
+
+?>
+
+
 
