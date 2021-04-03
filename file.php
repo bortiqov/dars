@@ -1,5 +1,5 @@
 <?php
-echo "as";
+echo "as"; // komentariya
 $k = 0;
 $myFile = "files.txt";
 if (isset($_POST['submit']) && !empty($_POST['text'])) {
@@ -15,6 +15,8 @@ if (isset($_POST['submit']) && !empty($_POST['text'])) {
    echo "<pre>";
    print_r($line);
    echo "</pre>";
+
+   echo "Bu o'zgarishlar ";
 //    while(!feof($file)){
 //        $line = file($file);
 //         echo "<pre>";
