@@ -2,6 +2,28 @@
 // name = Bunyodjon
 include_once "fuction.php";
 
+$value1;
+$value2;
+$value3;
+$value4 = 0;
+
+function engKattasi($value1, $value2, $value3){
+  $value4 = $value1;
+  if($value4 > $value2){
+      if($value4 > $value3){
+          echo "$value4 barcha sonlardan katta";
+      }else{
+          echo "$value3 barcha sonlardan katta";
+      }
+  }else{
+      $value4 = $value2;
+      if($value4 > $value3){
+          echo "$value4 barcha sonlardan katta"; 
+      }else{
+          echo "$value3 barcha sonlardan katta";
+      }
+  } 
+
 echo "my name is Jamshid";
 include_once "employees.php";
 
@@ -55,11 +77,13 @@ function compare($a,$b,$c){
 }
 echo compare(10,9,11);
 
+##shoxrux
+
 
 $mas=$_POST['number'];
 $katta=max($mas);
 print_r($katta);
-
+//-------------------- OYBEK--------------------------------
 function sonnikattasi($a, $b, $c)
 {
     if ($a>$b) {
@@ -79,15 +103,21 @@ function sonnikattasi($a, $b, $c)
 echo sonnikattasi(2,3,7);
 
 
+
+
+function katta($a, $b, $c){
+  if ($a > $b && $a > $c) {
+      return $a;
+    }
+    if ($c > $b && $c > $a) {
+      return $c;
+    }
+    if ($b > $a && $b > $c) {
+      return $b;
+    }
+}
+
+
  ?>
 
-
- <html>
- <form action="cherka.php" method="POST">
-  <input type="number" name="number[0]" placeholder="sonni kiriting"><br>
-  <input type="number" name="number[1]" placeholder="sonni kiriting"><br>
-  <input type="number" name="number[2]" placeholder="sonni kiriting"><br>
-  <input type="submit">
-  </form>
- </html>
 
