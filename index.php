@@ -23,7 +23,7 @@ function engKattasi($value1, $value2, $value3){
           echo "$value3 barcha sonlardan katta";
       }
   } 
-
+}
 echo "my name is Jamshid";
 include_once "employees.php";
 
@@ -81,7 +81,3 @@ function katta($a, $b, $c){
       return $b;
     }
 }
-
- ?>
-
-
