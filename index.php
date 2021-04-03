@@ -1,4 +1,7 @@
 <?php
+// name = Bunyodjon
+include_once "fuction.php";
+
 echo "my name is Jamshid";
 include_once "employees.php";
 
