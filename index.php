@@ -6,21 +6,12 @@ if ($_POST['select']) {
    echo $_POST['select'];
 }
 $employees = new Employees();
-
-// $data = [
-//     'first_name'=>'Bahodir',
-//     'last_name'=>'Ortiqov',
-//     'gender'=>'erkak',
-// ];
 $name = "Bahodir";
 $surname = "Ortiqov";
 $gender = "M";
 $date = "2020-12-03";
 $employees->insert(500000,$date,$name,$surname,$gender,$date);
 $employees->update(499998,"bahodir","ortiqov","M");
-// echo "<pre>";
-// print_r($employees->getModel());
-// echo "</pre>";
  $model = $employees->getModel();
 
 ?>
