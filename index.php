@@ -59,6 +59,26 @@ echo compare(10,9,11);
 $mas=$_POST['number'];
 $katta=max($mas);
 print_r($katta);
+
+function sonnikattasi($a, $b, $c)
+{
+    if ($a>$b) {
+        if ($a > $c) {
+            return $a;
+        } else {
+            return $c;
+        }
+    }elseif ($b>$c)
+            {
+                return $b;
+            }
+            else {
+                return $c;
+            }
+}
+echo sonnikattasi(2,3,7);
+
+
  ?>
 
 
