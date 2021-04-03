@@ -1,5 +1,4 @@
 <?php
-include_once "db.php";
 
 class GreatValue {
     public $value1;
