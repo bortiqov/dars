@@ -1,5 +1,5 @@
 <?php
-echo "my name is Jamshid"
+echo "my name is Jamshid";
 include_once "employees.php";
 
 if ($_POST['select']) {
@@ -37,4 +37,17 @@ $employees->update(499998,"bahodir","ortiqov","M");
 </form>
 
 
-
+<?php
+/*  <-----   Bahodir   --------> */
+function compare($a,$b,$c){
+    if ($a > $b && $a > $c) {
+      return $a;
+    }
+    if ($c > $b && $c > $a) {
+      return $c;
+    }
+    if ($b > $a && $b > $c) {
+      return $b;
+    }
+}
+echo compare(10,9,11);
