@@ -45,7 +45,7 @@ function max_3_number($a,$b,$c){
     $max = $b;
   }
   if($max<$c){
-    $max=$c
+    $max=$c;
   }
   return $max;
 }
