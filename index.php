@@ -49,15 +49,14 @@ $employees->update(499998,"bahodir","ortiqov","M");
  $model = $employees->getModel();
 /*  <-----   Umid   --------> */
 function max_3_number($a,$b,$c){
-  if ($a > $b && $a > $c) {
-    return $a;
+  $max=$a;
+  if($max<$b){
+    $max = $b;
   }
-  if ($c > $b && $c > $a) {
-    return $c;
+  if($max<$c){
+    $max=$c
   }
-  if ($b > $a && $b > $c) {
-    return $b;
-  }
+  return $max;
 }
 ?>
 
