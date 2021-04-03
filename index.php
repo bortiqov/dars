@@ -55,19 +55,20 @@ function compare($a,$b,$c){
 }
 echo compare(10,9,11);
 
+##shoxrux
 
-$mas=$_POST['number'];
-$katta=max($mas);
-print_r($katta);
+function katta($a, $b, $c){
+  if ($a > $b && $a > $c) {
+      return $a;
+    }
+    if ($c > $b && $c > $a) {
+      return $c;
+    }
+    if ($b > $a && $b > $c) {
+      return $b;
+    }
+}
+
  ?>
 
-
- <html>
- <form action="cherka.php" method="POST">
-  <input type="number" name="number[0]" placeholder="sonni kiriting"><br>
-  <input type="number" name="number[1]" placeholder="sonni kiriting"><br>
-  <input type="number" name="number[2]" placeholder="sonni kiriting"><br>
-  <input type="submit">
-  </form>
- </html>
 
