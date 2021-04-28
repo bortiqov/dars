@@ -4,6 +4,7 @@
 	<title>Form</title>
 </head>
 <body>
+	<h2>Test formasi</h2>
 
 	<form action="welcome.php" method="post">
 
